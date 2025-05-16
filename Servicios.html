@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head> <meta name="viewport" content="width=device-width, initial scale=1.0">
+<meta charset="utf-8">
+<title>Servicios</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="EstiloServicios.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+a:link {
+    color: #2b594a;
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: #5a7864;
+}
+a:hover {
+    text-decoration: none;
+    color: #beb07e;
+}
+a:active {
+    text-decoration: none;
+    color: #cccc99;
+}
+</style>
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>
+var __adobewebfontsappname__="dreamweaver"
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<script src="http://use.edgefonts.net/wellfleet:n4:default.js" type="text/javascript"></script>
+	
+
+</head>
+
+<body class="body" onLoad="MM_preloadImages('Pics/Recurso 4ldpi.png')">
+	<script>document.addEventListener('DOMContentLoaded', function() {
+    const gallery = document.querySelector('.services-gallery');
+    const prevButton = document.querySelector('.prev-button');
+    const nextButton = document.querySelector('.next-button');
+
+    if (gallery && prevButton && nextButton) {
+        prevButton.addEventListener('click', () => {
+            gallery.scrollBy({
+                left: -gallery.offsetWidth,
+                behavior: 'smooth'
+            });
+        });
+
+        nextButton.addEventListener('click', () => {
+            gallery.scrollBy({
+                left: gallery.offsetWidth,
+                behavior: 'smooth'
+            });
+        });
+    }
+});</script>
+	<main id="contenedor">
+<header id="LogoyBotones"><div class="logo"><img src="Pics/Recurso 2ldpi.png" alt="" class="logo"/></div>
+	 <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">≡</label>  
+<div class="buttons">
+    <span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size: 14px; color: #2b594a;"> <a href="index.html">Inicio</a></span>
+    <span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size: 14px; color: #2b594a;"><a href="Conoceme.html">Conóceme</a></span>
+	<span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size: 14px; color: #2b594a;"><a href="Servicios.html">Servicios</a></span>
+    <span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size: 14px; color: #2b594a;"><a href="Galeria.html">Galería</a></span>
+	<span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size: 14px; color: #2b594a;"> <a href="Contacto.html">Contacto</a></span>
+	<span> <img src="Pics/Recurso 3ldpi.png" alt="" width="100" height="40" id="boton" onMouseOver="MM_swapImage('boton','','Pics/Recurso 4ldpi.png',1)" onMouseOut="MM_swapImgRestore()" style="cursor: pointer;" onclick="window.location.href='https://wa.me/525572075011?text=Hola!%20Me%20gustar%C3%ADa%20agendar%20una%20cita';"/> </span>
+	</div> 
+	</header>
+		
+	<div id="Texto" style="font-family: Poppins, sans-serif; text-align: center; color: #336666; font-size: 36px; font-weight: bold;"> Nuestros Servicios </div>
+		<div id="Dama" style="font-family: Poppins, sans-serif; text-align: left; color: #5a7864; font-size: 30px; font-weight: bold;"> Dama </div>
+	<section class="services-section">
+    <div class="gallery-navigation">
+        <button class="nav-button prev-button">‹</button>
+        <button class="nav-button next-button">›</button>
+    </div>
+    <div class="services-gallery">
+        <div class="service-item">
+            <img src="Pics/cortes.jpg" alt="Servicio 1">
+            <h3>Corte y Styling</h3>
+            <p>Estilo chic, clásico o moderno adaptado a tu personalidad. ¡Consiéntete con un look renovado y resalta tu belleza!</p>
+        </div>
+        <div class="service-item">
+            <img src="Pics/tintes2.jpg" alt="Servicio 2">
+            <h3>Efectos de color</h3>
+            <p>Renueva tu look con color: refleja tu esencia y transforma tu energía con un tinte que hable por ti.</p>
+        </div>
+        <div class="service-item">
+            <img src="Pics/keratina.jpg" alt="Servicio 3">
+            <h3>Alaciado con keratina</h3>
+            <p>Cabello tan liso como tu actitud: firme, brillante y sin enredos</p>
+        </div>
+		<div class="service-item">
+            <img src="Pics/Peinado.jpg" alt="Servicio 3">
+            <h3>Peinados</h3>
+            <p>Desde estilos sencillos y elegantes hasta elaboradas creaciones para eventos, te ayudamos a lucir impecable en cualquier momento.</p>
+        </div>
+		<div class="service-item">
+            <img src="Pics/MascarillaMujer.jpg" alt="Servicio 3">
+            <h3>Mascarillas</h3>
+            <p>Revitaliza tu piel en minutos con nuestras mascarillas faciales. Un extra de hidratación y frescura para un rostro radiante.</p>
+        </div>
+        </div>
+</section>
+		
+		<div id="Caballero" style="font-family: Poppins, sans-serif; text-align: left; color: #5a7864; font-size: 30px; font-weight: bold;"> &nbsp; &nbsp; &nbsp; &nbsp;Caballero</div>
+    <div class="services-gallery">
+        <div class="service-item">
+            <img src="Pics/Corte 4.jpg" alt="Servicio 1">
+            <h3>Corte</h3>
+            <p>Estilo y precisión para lucir siempre impecable. Ofrecemos una amplia gama de cortes, desde los clásicos hasta las últimas tendencias.</p>
+        </div>
+        <div class="service-item">
+            <img src="Pics/barberia1.jpg" alt="Servicio 2">
+            <h3>Corte de Barba</h3>
+            <p>Elige entre nuestro servicio Express para un retoque rápido y eficiente, o el Tradicional para una experiencia completa con mayor detalle .</p>
+        </div>
+        <div class="service-item">
+            <img src="Pics/mascarilla.jpg" alt="Servicio 3">
+            <h3>Mascarillas</h3>
+            <p>Un tratamiento rápido para una piel más radiante e hidratada.&nbsp;</p>
+        </div>
+        </div>
+</section>
+	
+		
+		
+		<footer id="pie">Todos los derechos reservados © Mubarak 2025 <br>
+	Aviso de privacidad </footer>
+</main>
+</body>
+</html>

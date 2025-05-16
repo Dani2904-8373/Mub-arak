@@ -1,0 +1,343 @@
+@charset "utf-8";
+/* CSS Document */
+.body {
+    background-color: #e9e2d5;
+	padding-top: 100px; 
+	margin:0px;
+}
+.CONTENEDOR{
+	padding-bottom: 50px;
+	align-content: center;
+	display: flex;
+	justify-content: center;
+}
+
+        .container {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            max-width: 900px; /* Ancho máximo del contenedor */
+            width: 95%; /* Ocupa un porcentaje del ancho para responsividad */
+            overflow: hidden; /* Asegura que el contenido redondeado se vea bien */ 
+        }
+
+        .image-section {
+            flex: 1; /* Ocupa la mitad del espacio disponible */
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-section {
+            flex: 1; /* Ocupa la mitad del espacio disponible */
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .icon {
+            font-size: 4em; /* Tamaño del icono */
+            color: #8fbc8f; /* Un color verde suave como en la imagen */
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .name {
+    font-size: 28px;
+    color: #1e2a20;
+    margin-bottom: 10px;
+	margin-top: -10px;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+        }
+
+        .description {
+    color: #2f3e2e;
+    line-height: 1.6;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+	margin-top: -10px;
+        }
+
+#contenedor {
+	width:1024px;
+	margin-top: auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+	}
+.logo {
+	width: 420px; 
+	height: auto;
+	padding-top: 0px;
+	padding-left: 10px;
+}
+
+#LogoyBotones {
+  display: flex;
+  height: auto;
+  justify-content:space-between;
+  align-items: center;
+  padding-top: 10px;
+  background-color: #e9e2d5;
+  color:black;
+	position: fixed; /* Fija el elemento en la ventana del navegador */
+    top: 0; /* Lo coloca en la parte superior de la ventana */
+    width: 1024px; /* Ocupa todo el ancho de la ventana */
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  padding-right: 50px;
+  margin-top: 30px;
+}
+
+.buttons span {
+  color: white;
+  cursor: pointer;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#pie {
+    background-color: #2b594a;
+	line-height: 18px;
+	width: 1024px; 
+	height: 50px;
+	align-content: center;
+	text-align: center;
+	justify-content: space-between;
+	flex-direction: column;
+	display: flex;
+	padding-top: 10px;
+    color: #e9e2d5;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-size: 12px;
+	position: absolute;
+}
+
+#derechos {
+	padding-top: 5px;
+}
+
+.Portada {
+	display: grid;
+	display: flex;
+	justify-content: center;
+	
+}
+
+        /* Estilos para pantallas más pequeñas (opcional) */
+        @media (max-width: 412px) {
+#contenedor {
+	width: initial;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: 0px;
+	}
+	
+	
+.logo {
+    width: 300px;
+    height: 54.2px; 
+}
+#LogoyBotones {
+  display: flex;
+  height: 80px;
+  justify-content:space-between;
+  align-items: center;
+  padding-top: 10px;
+  background-color: #e9e2d5;
+  color:black;
+	position: fixed; /* Fija el elemento en la ventana del navegador */
+    top: 0; /* Lo coloca en la parte superior de la ventana */
+    width: 412px; /* Ocupa todo el ancho de la ventana */
+}
+	 .buttons {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #e9e2d5;
+    width: 150px;
+    padding: 10px;
+  }
+
+  #menu-toggle:checked + .menu-icon + .buttons {
+    display: flex;
+  }
+
+  .menu-icon { 
+	  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+      display: block;
+	  font-size: 3rem;
+	  margin-right: 20px;
+  }
+
+            .container {
+                flex-direction: column; /* Apila las secciones verticalmente */
+            }
+
+            .image-section, .text-section {
+                padding: 20px;
+            }
+
+            .icon {
+                text-align: center;
+            }
+
+            .name, .description {
+                text-align: center;
+            }
+			
+#pie {
+    background-color: #2b594a;
+	width: -webkit-fill-available;
+	height: 50px;
+	text-align: center;
+	padding-top: 10px;
+	padding-left: -20px;
+    color: #e9e2d5;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-size: 12px;
+	position: absolute;
+}
+			
+}
+
+/* Estilos para tablets pequeñas (ancho mínimo de 413px y máximo de 768px) */
+@media (min-width: 413px) and (max-width: 768px) {
+    #contenedor {
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo {
+        width: 250px;
+        height: auto;
+    }
+
+    #LogoyBotones {
+        width: 768px;
+        height: 70px;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+		margin-left: 30px;
+		width: 100%;
+    }
+
+    .container {
+        max-width: 700px; /* Ajusta el ancho máximo del contenedor */
+        width: 90%;
+        flex-direction: row; /* Vuelve a la disposición horizontal */
+    }
+
+    .image-section,
+    .text-section {
+        padding: 25px;
+    }
+
+    .icon {
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+
+    .name {
+        font-size: 24px;
+        margin-bottom: 8px;
+        margin-top: 0;
+    }
+
+    .description {
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    #pie {
+        width: 768px;
+    }
+}
+
+/* Estilos para tablets más grandes (ancho mínimo de 769px y máximo de 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #contenedor {
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo {
+        width: 400px;
+        height: auto;
+    }
+
+    #LogoyBotones {
+        width: 1024px;
+        height: 75px;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 18px;
+        padding-right: 30px;
+        margin-top: 25px;
+    }
+
+    .container {
+        max-width: 950px; /* Ajusta el ancho máximo del contenedor */
+        width: 95%;
+        flex-direction: row; /* Mantiene la disposición horizontal */
+    }
+
+    .image-section,
+    .text-section {
+        padding: 30px;
+    }
+
+    .icon {
+        font-size: 3.5em;
+        margin-bottom: 12px;
+    }
+
+    .name {
+        font-size: 26px;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    .description {
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+    #pie {
+        width: 1024px;
+    }
+}

@@ -1,0 +1,324 @@
+@charset "utf-8";
+/* CSS Document */
+
+.body {
+    background-color: #e9e2d5;
+	padding-top: 100px; 
+	margin:0px;
+}
+#contenedor {
+	background-image: url("Pics/salóndebelleza.jpg");
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center center;
+	width:1024px;
+	height:auto;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	}
+.logo {
+	width: 420px; 
+	height: auto;
+	padding-top: 0px;
+	padding-left: 10px;
+}
+
+#LogoyBotones {
+  display: flex;
+  height: auto;
+  justify-content:space-between;
+  align-items: center;
+  padding-top: 10px;
+  background-color: #e9e2d5;
+  color:black;
+	position: fixed; /* Fija el elemento en la ventana del navegador */
+    top: 0; /* Lo coloca en la parte superior de la ventana */
+    width: 1024px; /* Ocupa todo el ancho de la ventana */
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.buttons span {
+  color: white;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+
+#letras {
+    padding-left: 50px;
+    word-spacing: 10px;
+}
+
+.Portada {
+	padding-top: 50px;
+	display: grid;
+	display: flex;
+	justify-content: center;
+	
+}
+
+#pie {
+    background-color: #2b594a;
+	width: 1024px; 
+	height: 50px;
+	text-align: center;
+	padding-top: 10px;
+    color: #e9e2d5;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-size: 12px;
+	position: absolute;
+}
+
+#derechos {
+	padding-top: 5px;
+}
+#Texto {
+	align-content: center;
+	padding-bottom: 55px;
+}
+@media (max-width:412px){
+	
+.body {
+    background-color: #e9e2d5;
+}
+
+#contenedor {
+	width: initial;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: 0px;
+	}
+.logo {
+   width: 300px;
+   height: 54.2px; 
+	padding-top: 0px;
+	padding-left: 10px;
+}
+	#LogoyBotones {
+  display: flex;
+  height: 80px;
+  justify-content:space-between;
+  align-items: center;
+  padding-top: 10px;
+  background-color: #e9e2d5;
+  color:black;
+	position: fixed; /* Fija el elemento en la ventana del navegador */
+    top: 0; /* Lo coloca en la parte superior de la ventana */
+    width: 412px; /* Ocupa todo el ancho de la ventana */
+}
+	 .buttons {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #e9e2d5;
+    width: 150px;
+    padding: 10px;
+  }
+
+  #menu-toggle:checked + .menu-icon + .buttons {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+	  font-size: 3rem;
+	  margin-right: 20px;
+  }
+
+
+#letras {
+    padding-left: 50px;
+    word-spacing: 10px;
+}
+
+.Portada {
+	display: grid;
+	display: flex;
+	justify-content: center;
+	
+}
+
+#pie {
+    background-color: #2b594a;
+	width: -webkit-fill-available;
+	height: 50px;
+	text-align: center;
+	padding-top: 10px;
+	padding-left: -20px;
+    color: #e9e2d5;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-size: 12px;
+	position: absolute;
+}
+
+#derechos {
+	padding-top: 5px;
+}
+.Espacio {
+	font-size: 1em;
+	line-height: 1.3;
+	}
+#Texto {
+	align-content: center;
+	padding-bottom: 55px;
+}
+}
+
+/* Estilos para tablets (ancho mínimo de 413px y máximo de 768px) */
+@media (min-width: 413px) and (max-width: 768px) {
+    .body {
+        padding-top: 70px; /* Ajustamos el padding superior para tablets pequeñas */
+    }
+
+    #contenedor {
+        width: initial; /* Ancho típico de tablets en vertical */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo {
+        width: 350px; /* Ajustamos el ancho del logo para tablets pequeñas */
+        height: auto;
+    }
+
+    #LogoyBotones {
+        width: 768px; /* Ancho del encabezado en tablets pequeñas */
+        height: 65px; /* Ajustamos la altura del encabezado */
+        padding-top: 8px; /* Ajustamos el padding superior */
+    }
+
+    .buttons {
+        display: flex; /* Mostramos los botones en tablets pequeñas */
+        gap: 15px;
+        padding-right: 15px;
+    }
+
+    .buttons span {
+        font-size: 0.9em;
+    }
+
+    .menu-icon {
+        display: none !important; /* Ocultamos el icono de menú */
+    }
+
+    #letras {
+        padding-left: 30px;
+        word-spacing: 7px;
+        font-size: 1em;
+    }
+
+    .Portada {
+        padding-top: 35px;
+    }
+
+    #pie {
+        width: 768px;
+        height: 45px;
+        padding-top: 8px;
+        font-size: 11px;
+        position: absolute;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Espacio {
+        font-size: 0.9em;
+        line-height: 1.25;
+    }
+
+    #Texto {
+        padding-bottom: 35px;
+    }
+}
+
+/* Estilos para tablets más grandes (ancho mínimo de 769px y máximo de 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .body {
+        padding-top: 80px; /* Ajustamos el padding superior para tablets más grandes */
+    }
+
+    #contenedor {
+        width: 1024px; /* Ancho típico de tablets grandes en horizontal o algunas en vertical */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo {
+        width: 400px; /* Ajustamos el ancho del logo para tablets más grandes */
+        height: auto;
+    }
+
+    #LogoyBotones {
+        width: 1024px; /* Ancho del encabezado en tablets más grandes */
+        height: 75px; /* Ajustamos la altura del encabezado */
+        padding-top: 10px; /* Ajustamos el padding superior */
+    }
+
+    .buttons {
+        display: flex; /* Mostramos los botones */
+        gap: 18px;
+        padding-right: 18px;
+    }
+
+    .buttons span {
+        font-size: 1em;
+    }
+
+    .menu-icon {
+        display: none !important; /* Ocultamos el icono de menú */
+    }
+
+    #letras {
+        padding-left: 45px;
+        word-spacing: 8px;
+        font-size: 1.1em;
+    }
+
+    .Portada {
+        padding-top: 40px;
+    }
+
+    #pie {
+        width: 1024px;
+        height: 50px;
+        padding-top: 10px;
+        font-size: 12px;
+        position: absolute;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Espacio {
+        font-size: 0.95em;
+        line-height: 1.25;
+    }
+
+    #Texto {
+        padding-bottom: 40px;
+    }
+}

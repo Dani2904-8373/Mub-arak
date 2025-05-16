@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Galería</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="EstiloGaleria.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+a:link {
+    color: #2b594a;
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: #5a7864;
+}
+a:hover {
+    text-decoration: none;
+    color: #beb07e;
+}
+a:active {
+    text-decoration: none;
+    color: #cccc99;
+}
+</style>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+</head>
+
+<body class="body" onLoad="MM_preloadImages('Pics/Recurso 4ldpi.png')">
+	<script>document.addEventListener('DOMContentLoaded', function() {
+    const galleryItems = document.querySelectorAll('.gallery-item img');
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+    document.body.appendChild(overlay);
+
+    galleryItems.forEach(img => {
+        img.addEventListener('click', function() {
+            const imageUrl = this.getAttribute('src');
+            const largeImage = document.createElement('img');
+            largeImage.src = imageUrl;
+            largeImage.alt = this.getAttribute('alt');
+
+            // Limpiar el overlay si tiene contenido previo
+            overlay.innerHTML = '';
+            overlay.appendChild(largeImage);
+            overlay.classList.add('active');
+        });
+    });
+
+    // Cerrar la superposición al hacer clic en ella
+    overlay.addEventListener('click', function() {
+        overlay.classList.remove('active');
+    });
+});</script>
+	<main id="contenedor">
+<header id="LogoyBotones"><div class="logo"><img src="Pics/Recurso 2ldpi.png" alt="" class="logo"/></div>
+	 <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">≡</label>  
+<div class="buttons">
+    <span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size: 14px; color: #2b594a;"> <a href="index.html">Inicio</a></span>
+    <span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size: 14px; color: #2b594a;"><a href="Conoceme.html">Conóceme</a></span>
+	<span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size: 14px; color: #2b594a;"><a href="Servicios.html">Servicios</a></span>
+    <span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size: 14px; color: #2b594a;"><a href="Galeria.html">Galería</a></span>
+	<span style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; font-size: 14px; color: #2b594a;"> <a href="Contacto.html">Contacto</a></span>
+	<span> <img src="Pics/Recurso 3ldpi.png" alt="" width="100" height="40" id="boton" onMouseOver="MM_swapImage('boton','','Pics/Recurso 4ldpi.png',1)" onMouseOut="MM_swapImgRestore()" style="cursor: pointer;" onclick="window.location.href='https://wa.me/525572075011?text=Hola!%20Me%20gustar%C3%ADa%20agendar%20una%20cita';"/> </span>
+	</div> 
+	</header>
+<div class="gallery-container">
+        <div class="gallery-item">
+            <img src="Pics/Peinado 2.jpg" width="1419" height="1419" alt="Estilo1"/> 
+        </div>
+        <div class="gallery-item">
+            <img src="Pics/Corte.jpg" width="1440" height="1440" alt="Estilo 2"/>
+        </div>
+        <div class="gallery-item">
+       	  <img src="Pics/Corte 2.jpg" width="1440" height="1440" alt="Estilo 3"/>
+        </div>
+        <div class="gallery-item">
+       	  <img src="Pics/Corte 3.jpg" width="1194" height="1194" alt="Estilo 4"/> 
+	    </div>
+        <div class="gallery-item">
+       	  <img src="Pics/Color 2.jpg" width="1440" height="1440" alt="Estilo 5"/> 
+	    </div>
+        <div class="gallery-item">
+       	  <img src="Pics/Peinado 4.jpg" width="1430" height="1430" alt="Estilo 6"/> 
+	    </div>
+        <div class="gallery-item">
+       		 <img src="Pics/Corte 5.jpg" width="1440" height="1440" alt="Estilo 7"/> 
+	    </div>
+		<div class="gallery-item">
+   	    <img src="Pics/Peinado 3.jpg" width="1440" height="1440" alt="Estilo 8"/> </div>
+		<div class="gallery-item">
+   	    <img src="Pics/Color 4.jpg" width="1080" height="1080" alt="Estilo 9"/> </div>
+		<div class="gallery-item">
+	    	<img src="Pics/Corte 4.jpg" width="1939" height="1939" alt="Estilo 10"/></div>
+		<div class="gallery-item">
+	    	<img src="Pics/Color 5.jpg" width="1309" height="1309" alt="Estilo 11"/> </div>
+		<div class="gallery-item">
+	    	<img src="Pics/Corte 6.jpg" width="1440" height="1440" alt="Estilo 12"/> </div>
+        </div>
+<footer id="pie">Todos los derechos reservados © Mubarak 2025 <br> Aviso de privacidad <br> </footer>
+</main>
+</body>
+</html>
