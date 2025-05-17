@@ -201,6 +201,12 @@ body {
 	position: absolute;
 }
 
+a.Aviso:link {text-decoration: none; color: #cccc99}
+a.Aviso:visited {text-decoration: none; color: #9DCFAC}
+a.Aviso:hover {text-decoration: none; color: #968651}
+a.Aviso:active {text-decoration: none; color: white}
+
+
    /* Estilos para pantallas más pequeñas (opcional) */
         @media (max-width: 412px) {
 #contenedor {
