@@ -132,6 +132,12 @@
 	position: absolute;
 }
 
+a.Aviso:link {text-decoration: none; color: #cccc99}
+a.Aviso:visited {text-decoration: none; color: #9DCFAC}
+a.Aviso:hover {text-decoration: none; color: #968651}
+a.Aviso:active {text-decoration: none; color: white}
+
+
 #derechos {
 	padding-top: 5px;
 }
