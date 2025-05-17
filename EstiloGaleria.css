@@ -30,6 +30,7 @@
 	position: fixed; /* Fija el elemento en la ventana del navegador */
     top: 0; /* Lo coloca en la parte superior de la ventana */
     width: 1024px; /* Ocupa todo el ancho de la ventana */
+    z-index: 100;
 }
 
 .buttons {
